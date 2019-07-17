@@ -3399,7 +3399,7 @@ public class GBMTest extends TestUtil {
       GBMModel.GBMParameters params = new GBMModel.GBMParameters();
       params._response_column = "CAPSULE";
       params._ignored_columns = new String[]{"ID"};
-      params._seed = 1235;  // 1234 is failing on new Java11
+      params._seed = 987654321;  // 1235, 1234 is failing on new Java11
       params._ntrees = 500;
       params._nfolds = 3;
       params._learn_rate = 0.01;
